@@ -35,3 +35,10 @@ div ul li a:hover{
    color: white;
    text-align: center;
 }
+.co{
+	text-decoration: none;
+	color: white;
+}
+.co:hover{
+	color: green;
+}
