@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Art</title>
+	<link rel="icon" href="faviccon-01.png" type="imagex-icon">
+	<link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="art.css">
+	<meta name="author" content="Doris Morales">
+</head>
+<body>
+<div class="paint">
+	
+<nav>
+	<ul class="navbar">
+		<li><div class="box"><a href="home.html"><div class="max1"><div class="max2"></div></div></a></div></li>
+		<li><div class="box"><div class="min"></div></div></li>
+		
+		<li class="title">Untitled- Paint</li>
+	</ul>
+</nav>
+<div class="filetab">
+	<ul class="tools">
+		<li><p class="underline">F</p><p>ile</p></li>
+		<li><p class="underline">E</p><p>dit</p></li>
+		<li><p class="underline">V</p><p>iew</p></li>
+		<li><p class="underline">I</p><p>mage</p></li>
+		<li><p class="underline">O</p><p>ptions</p></li>
+		<li><p class="underline">H</p><p>elp</p></li>
+	</ul>
+</div>
+<div class="slideshow">
+	<div class="album">
+
+		<div class="image">
+			<img src="https://pro2-bar-s3-cdn-cf.myportfolio.com/86ef1a99-35b3-427b-b887-8c50b7a524e3/b8374aac-c080-412a-a16e-49d5b4532389_rw_1200.jpg?h=9e6ac19ce866c3401feb777fb4571dd8" style="width: 50%">
+			<div class="captionbox"> 
+				Nezuko, Illustrator
+			</div>	
+		</div>
+
+		<div class="image">
+			<img src="" style="width: 100%">
+			<div class="captionbox"> 
+				Comic, Traditional
+			</div>	
+		</div>
+
+		<div class="image">
+			<img src="" style="width: 100%">
+			<div class="captionbox"> 
+				Comic, Traditional
+			</div>	
+		</div>
+
+		<div class="image">
+			<img src="" style="width: 100%">
+			<div class="captionbox"> 
+				100Thieves, Illustrator
+			</div>	
+		</div>
+
+
+
+
+
+
+	</div>
+
+	<div class="button"></div>
+	<div class="button"></div>
+</div>
+<script >
+
+	var SlideshowIndex=1;
+	showDivs(SlideshowIndex);
+
+	function plusDivs(n)
+	{
+		showDivs(SlideshowIndex+=n);
+	}
+
+	function showDivs(n)
+	{
+		var i;
+		var x=document.getElementsbyClassName("image");
+		if(n>x.length)
+		{
+			SlideshowIndex=1;
+		}
+		if(n<1)
+		{
+			SlideshowIndex=x.length;
+		}
+		for(i=0;i<x.length;i++)
+		{
+			x[i].stlye.display="none";
+		}
+		x[SlideshowIndex-1].style.display="block";
+	}
+</script>
+
+<div class="footer">
+	<p>Doris Morales</p>
+	<p>@Copyright 2020-2025</p>
+</div>
+</body>
+</html>

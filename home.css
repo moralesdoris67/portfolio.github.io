@@ -1,0 +1,37 @@
+body{
+	background-color: black;
+	font-family: 'VT323', monospace;
+	color: white;
+	font-size: 24px;
+}
+div{
+	margin-left: -4vh;
+}
+div ul {
+	list-style: none;
+}
+div ul li a{
+	text-decoration: none;
+	color: white;
+}
+div ul li a:hover{
+	background-color: white;
+	color: black;
+}
+
+.back{
+	text-decoration: none;
+	color: white;
+}
+
+.back:hover{
+	color: red;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: white;
+   text-align: center;
+}
